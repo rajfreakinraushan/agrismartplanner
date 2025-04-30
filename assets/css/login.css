@@ -1,0 +1,91 @@
+/* Login and Register Page Styles */
+.auth-section {
+    padding: 4rem 0;
+}
+
+.auth-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.auth-image {
+    background-color: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.auth-image img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.auth-form {
+    padding: 3rem;
+}
+
+.auth-form h1 {
+    margin-bottom: 0.5rem;
+}
+
+.auth-form p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.forgot-password {
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+.auth-footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--background-dark);
+}
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+}
+
+.terms input {
+    width: auto;
+    margin-right: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .auth-image {
+        display: none;
+    }
+}
